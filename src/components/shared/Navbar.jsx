@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from "../ui/button"; 
-import Dropdown from "../ui/Dropdown"; 
+import { Button } from "../ui/button";
+import Dropdown from "../ui/Dropdown";
+import ThemeToggle from "../ui/ThemeToggle";
 
 const Navbar = () => {
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl z-[100]">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        
+
         <Link to="/" className="text-2xl font-black tracking-tighter text-white">
           AMKA<span className="text-green-500">.</span>
         </Link>
@@ -27,6 +28,9 @@ const Navbar = () => {
             Projects
           </Link>
           <Dropdown title="Tools" items={toolItems} />
+          <div className="pl-4 border-l border-white/10">
+            <ThemeToggle />
+          </div>
         </nav>
 
         {/* <div className="flex items-center gap-4">

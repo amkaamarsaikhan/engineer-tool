@@ -20,7 +20,7 @@ const Home = () => {
                         <div className="absolute inset-0 bg-green-500 blur-2xl opacity-40 rounded-full animate-pulse" />
                         <div className="relative w-full h-full rounded-full border-4 border-green-500/50 p-1 overflow-hidden bg-black">
                             <img 
-                                src="public/hero.jpg" 
+                                src="/hero.jpg" 
                                 alt="Amka" 
                                 className="w-full h-full object-cover rounded-full shadow-2xl"
                             />
