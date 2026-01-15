@@ -1,32 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
+import { useTheme } from '../theme-provider';
 
 const ThemeToggle = () => {
-  const [isDark, setIsDark] = useState(true);
 
-  useEffect(() => {
-    // LocalStorage-оос өмнөх сонголтыг шалгах
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
-      setIsDark(false);
-      document.documentElement.classList.remove('dark');
-    } else {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
+  const { theme, setTheme } = useTheme()
+  const isDark = theme === 'dark';
+  console.log('theme', theme)
 
   const toggleTheme = () => {
-    if (isDark) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setIsDark(false);
+    if (theme === "dark") {
+      setTheme("light");
     } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setIsDark(true);
+      setTheme("dark");
     }
   };
 

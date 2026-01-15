@@ -9,7 +9,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-[#050505] text-white overflow-hidden relative">
+        <div className="min-h-screen bg-background text-white overflow-hidden relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-500/20 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="max-w-6xl mx-auto px-4 py-24 space-y-20 relative z-10">
