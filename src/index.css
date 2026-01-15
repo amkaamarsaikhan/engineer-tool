@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html, body, #root {
-  margin: 0;
+  margin: -10;
   padding: 0;
   width: 100%;
   min-height: 100vh;

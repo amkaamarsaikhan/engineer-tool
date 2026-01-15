@@ -29,12 +29,12 @@ const Navbar = () => {
           <Dropdown title="Tools" items={toolItems} />
         </nav>
 
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
           <Button variant="ghost" className="text-slate-400 font-bold hover:text-white">Log in</Button>
           <Button className="bg-white text-black font-black px-6 rounded-full hover:bg-green-400 transition-all">
             Sign up
           </Button>
-        </div>
+        </div> */}
       </div>
     </header>
   );
