@@ -63,9 +63,9 @@ const Home = () => {
                             <div className="w-12 h-12 bg-green-500/10 text-green-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                 <Construction size={28} />
                             </div>
-                            <CardTitle className="text-2xl font-bold text-white">Structural Analysis</CardTitle>
+                            <CardTitle className="text-2xl font-bold text-white">Structural Engineering Analysis</CardTitle>
                             <CardDescription className="text-slate-400 leading-relaxed text-lg pt-2">
-                                Даацын тооцоолол, материалын эсэргүүцэл болон барилгын кодын автоматжуулалт. React, Node.js болон өгөгдлийн сангийн архитектурын шийдлүүд.
+                                Даацын тооцоолол, материалын эсэргүүцэл болон барилгын кодын автоматжуулалт. Бүтээц, механик болон цахилгаан тооцооллын хэрэгслийн төрөл бүрийн шийдэл. 
                             </CardDescription>
                         </CardHeader>
                     </Card>
@@ -75,9 +75,9 @@ const Home = () => {
                             <div className="w-12 h-12 bg-green-500/10 text-green-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                 <Code size={28} />
                             </div>
-                            <CardTitle className="text-2xl font-bold text-white">Structural design tool</CardTitle>
+                            <CardTitle className="text-2xl font-bold text-white">FrontEnd Developring and Data Analysis</CardTitle>
                             <CardDescription className="text-slate-400 leading-relaxed text-lg pt-2">   
-                                Бүтээц, механик болон цахилгаан тооцооллын хэрэгслийн төрөл бүрийн шийдэл. HTML, CSS болон JavaScript ашиглан интерактив веб аппликейшн хөгжүүлэлт.
+                                HTML, CSS болон JavaScript ашиглан интерактив веб аппликейшн хөгжүүлэлт. React, Node.js болон өгөгдлийн сангийн архитектурын шийдлүүд.
                             </CardDescription>
                         </CardHeader>
                     </Card>
