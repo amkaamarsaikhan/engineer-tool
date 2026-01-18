@@ -1,18 +1,61 @@
-# React + Vite
+🏗️ Construction Engineer Tool (v1.0)
+Энэхүү төсөл нь барилгын инженерүүдэд зориулсан тооцооллын нэгдсэн систем юм. Хэрэглэгч барилгын материалын төсөв бодохоос гадна бүтээц, механик, болон цахилгааны нарийн алгоритмуудыг нэг дороос гүйцэтгэх боломжтой.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Үндсэн боломжууд (Core Features)
+1. Материал түүвэр ба Төсөв (Budgeting System)
 
-Currently, two official plugins are available:
+Бетон ба Тоосго: Эзлэхүүнээс хамаарч цемент, элс, хайрга болон тоосгоны тоог нормчилсон утгаар бодно.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Зардлын нэгтгэл: Материалын зах зээлийн үнэ болон ажиллах хүчний хөлсийг тооцож, нийт өртгийг гаргана.
 
-## React Compiler
+2. Инженерийн тооцоолуур (Engineering Calculator)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Бүтээц (Structural): Дам нурууны хазайлт (δ 
+max
+​	
+ ), баганын хугарал (P 
+cr
+​	
+ ) болон суурийн даралтыг бодно.
 
-## Expanding the ESLint configuration
+Механик (Mechanical): Моторын чадал, эргүүлэх момент (T), болон холхивчийн ашиглалтын хугацаа (L 
+10
+​	
+ ).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Цахилгаан (Electrical): Кабелийн огтлол сонголт, 3-фазын чадал болон богино залгааны гүйдэл тооцоо.
 
-# engineer-tool
+🛠️ Технологийн сан (Tech Stack)
+Frontend: React.js, Vite (Fast Refresh-д зориулсан SWC-тэй).
+
+Math Logic: mathjs сан ашиглан инженерийн нарийн функцүүдийг боловсруулсан.
+
+Routing: react-router-dom ашиглан хуудсууд хоорондын шилжилтийг шийдсэн.
+
+📦 Суурилуулалт (Installation)
+Репозиторийг татах:
+
+Bash
+```git clone https://github.com/amkaamarsaikhan/my-engineer-app.git```
+Сангуудыг суулгах:
+
+Bash
+```npm install```
+Төслийг ажиллуулах:
+
+Bash
+```npm run dev```
+📂 Төслийн бүтэц
+src/pages/ - Хуудаснууд (Home, Budget, Calculator, Projects).
+
+src/utils/formulas.js - Бүх инженерийн логик ба алгоритмууд.
+
+.gitignore - node_modules болон dist хавтаснуудыг хасахаар тохируулсан.
+
+💡 Дараагийн шинэчлэлтүүд
+
+[ ] Тооцооны үр дүнг PDF-ээр татаж авах.
+
+[ ] Хөрсний механик шинж чанарын өгөгдлийн сан нэмэх.
+
+[ ] Ган бүтээцийн профилийн жагсаалт (I-beam, H-beam) оруулах.
