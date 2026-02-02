@@ -27,7 +27,7 @@ const Projects = () => {
       title: "Official Portfolio",
       tech: ["Vite", "PWA", "Animation"],
       desc: "Миний мэргэжлийн туршлага, ур чадвар болон гүйцэтгэсэн ажлуудыг нэгтгэсэн, гар утсанд апп шиг суудаг (PWA) танилцуулга вэб.",
-      link: "https://amkaamarsaikhan.github.io/Porfolio/",
+      link: "https://portfolioamka.vercel.app/",
       isInternal: false,
       icon: <Code2 className="w-6 h-6" />
     }
