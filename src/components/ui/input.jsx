@@ -1,19 +1,24 @@
-import React from "react";
-import { cn } from "../../utils/cn";
+import React from 'react';
+import { cn } from '../utils/cn'; 
 
-const Input = React.forwardRef(({ className, type, ...props }, ref) => {
+export const EngineerInput = ({ label, unit, error, ...props }) => {
   return (
-    <input
-      type={type}
-      className={cn(
-        "flex h-12 w-full rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all",
-        className
-      )}
-      ref={ref}
-      {...props}
-    />
+    <div className="flex flex-col gap-1 w-full">
+      <div className="flex justify-between items-center">
+        <label className="text-xs font-semibold text-slate-600 uppercase tracking-wider">
+          {label} {unit && <span className="text-slate-400">({unit})</span>}
+        </label>
+        {error && <span className="text-[10px] text-red-500 font-medium animate-pulse">⚠️ {error}</span>}
+      </div>
+      
+      <input
+        {...props}
+        className={cn(
+          "w-full px-3 py-2 bg-white border rounded-sm text-sm transition-all outline-none",
+          "border-slate-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-200",
+          error ? "border-red-400 bg-red-50" : "hover:border-slate-300"
+        )}
+      />
+    </div>
   );
-});
-Input.displayName = "Input";
-
-export { Input };
+};
